@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"">
+  <meta http-equiv=" X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+  <title>Лабараторыя распазнавання і сінтэзу маўлення</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-inner">
+              <nav class="navbar">
+                <div class="container-fluid">
+                  <div class="navbar-inner">
+                    <div class="logo-block">
+                      <img src="img/logo.png" alt="Logo">
+                      <p>Лабараторыя распазнавання і сінтэзу маўлення</p>
+                    </div>
+                    <div class="menu">
+                      <ul>
+                        <li><a id="expert">Экспертыза</a></li>
+                        <li><a id="uslugi">Паслугі</a></li>
+                        <li><a id="proecti">Праекты</a></li>
+                        <li><a id="about">Пра нас</a></li>
+                      </ul>
+                    </div>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Замовіць</button>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" id="expert">Экспертыза</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="uslugi">Паслугі</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="proecti">Праекты</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="about">Пра нас</a>
+                        </li>
+                      </ul>
+                      <h5>Кантакты</h5>
+                      <ul class="navbar-contact">
+                        <li>
+                          <a href="tel:+375173792773">+375 (17) 379-27-73</a>
+                        </li>
+                        <li>
+                          <a href="mailto:sales@ssrlab.by">sales@ssrlab.by</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="main-inner">
+              <div class="main-info">
+                <h1>Пераўтварыце Вашыя ідэі ў IT-рашэнні з інавацыямі на аснове <span>штучнага інтэлекту (AI)</span>
+                </h1>
+                <div class="panel">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Замовіць</button>
+                  <button id="proect">Праекты <img src="img/icon/arrow.png" alt="Праект"></button>
+                </div>
+              </div>
+              <div class="main-banner">
+                <img src="img/sfera.png" alt="Сфера">
+              </div>
+              <div class="mobile-panel">
+                <p>Адзіная навуковая лабараторыя ў Беларусі<br> з вялікім вопытам <br>
+                  у галіне сінтэзу і распазнання маўлення</p>
+                <div class="chekin">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Замовіць</button>
+                  <button id="proect">Праекты <img src="img/icon/arrow.png" alt="Праект"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="why">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="why-inner">
+            <h3>Выбіраючы распрацоўку IT прадукта ў нас, <br> вы атрымліваеце якасны прадукт, распрацаваны
+              прафесіяналамі з выкарыстаннем інавацыйных тэхналогій, з магчымасцю далейшай падтрымкі і індывідуальным
+              падыходам да сваіх запатрабаванняў.</h3>
+            <div class="why-content">
+              <div class="why-item">
+                <span>100%</span>
+                <p>задаволеных замоўцаў</p>
+              </div>
+              <div class="why-item">
+                <span>30+</span>
+                <p>рэалізаваных праектаў</p>
+              </div>
+            </div>
+            <div class="why-content">
+              <div class="why-item">
+                <span>50+</span>
+                <p>гадоў працы</p>
+              </div>
+              <div class="why-item">
+                <span>300+</span>
+                <p>навуковых публікацый</p>
+              </div>
+              <div class="why-item">
+                <span>10+</span>
+                <p>паслуг для рэалізацыі вашых ідэй</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Што мы прапануем</h2>
+          <div class="services-inner sevices-d-active">
+            <div class="services-items">
+              <div class="services-card">
+                <img src="img/services/ico_1.png" alt="Мабільныя дадаткі">
+                <h4>Мабільныя дадаткі</h4>
+                <p>Распрацоўка iOS і Android дадаткаў</p>
+              </div>
+              <div class="services-card">
+                <img src="img/services/ico_2.png" alt="Вэб-сэрвісы">
+                <h4>Вэб-сэрвісы</h4>
+                <p>Вэб-рашэнні ад простых вэб-сайтаў да цікавых прыкладанняў</p>
+              </div>
+              <div class="services-card">
+                <img src="img/services/ico_3.png" alt="Апрацоўка дадзеных">
+                <h4>Складаная апрацоўка дадзеных</h4>
+                <p>Апрацоўка тэкста, гука, маўлення, выявы для вашай праграмы</p>
+              </div>
+              <div class="services-card">
+                <img src="img/services/ico_4.png" alt="AI & Data Science">
+                <h4>AI & Data Science</h4>
+                <p>Праграмаванне сістэмы з прымяненнем AI & Data Science для апрацоўкі тэксту, гука ці маўлення //
+                  Трэніроўка AI мадэлі (нейрасеткі) </p>
+              </div>
+              <div class="services-card">
+                <img src="img/services/ico_5.png" alt="Мабільныя дадаткі">
+                <h4>QA & Testing</h4>
+                <p>Кантроль якасці распрацаваных рашэнняў з дапамогай разнастайных паслуг тэсціравання праграмнага
+                  забеспячэння</p>
+              </div>
+              <div class="services-card">
+                <img src="img/services/ico_6.png" alt="UX/UI дызайн">
+                <h4>UX/UI дызайн</h4>
+                <p>Распрацоўка дызайна вэб-платформы, сайта ці мабільнага датадка</p>
+              </div>
+              <div class="services-card">
+                <img src="img/services/ico_7.png" alt="Выдзеленая каманда">
+                <h4>Выдзеленая каманда</h4>
+                <p>UX/UI // Back-end (Python, Golang, C/C++) // DevOps (AWS) // Front-end (JavaScript, React, Redux,
+                  HTML, CSS) // iOS/Android //QA тэстыроўшчык</p>
+              </div>
+              <div class="services-card">
+                <img src="img/services/ico_8.png" alt="Мабільныя дадаткі">
+                <h4>Кансультацыя па распрацоўцы</h4>
+                <p>IT прадукта // Мабільнага дадатка // Telegram-бота // AI-сістэм // Нейроннай сеткі</p>
+              </div>
+            </div>
+          </div>
+          <div class=" services-slider">
+            <div class="services-card">
+              <img src="img/services/ico_1.png" alt="Мабільныя дадаткі">
+              <h4>Мабільныя дадаткі</h4>
+              <p>Распрацоўка iOS і Android дадаткаў</p>
+            </div>
+            <div class="services-card">
+              <img src="img/services/ico_2.png" alt="Вэб-сэрвісы">
+              <h4>Вэб-сэрвісы</h4>
+              <ul>
+                <li>Распрацоўка iOS дадаткаў</li>
+                <li>Распрацоўка Android дадаткаў</li>
+              </ul>
+            </div>
+            <div class="services-card">
+              <img src="img/services/ico_3.png" alt="Апрацоўка дадзеных">
+              <h4>Складаная апрацоўка дадзеных</h4>
+              <p>Апрацоўка тэкста, гука, маўлення, выявы для вашай праграмы</p>
+            </div>
+            <div class="services-card">
+              <img src="img/services/ico_4.png" alt="AI & Data Science">
+              <h4>AI & Data Science</h4>
+              <p>Праграмаванне сістэмы з прымяненнем AI & Data Science для апрацоўкі тэксту, гука ці маўлення //
+                Трэніроўка AI мадэлі (нейрасеткі) </p>
+            </div>
+            <div class="services-card">
+              <img src="img/services/ico_5.png" alt="Мабільныя дадаткі">
+              <h4>QA & Testing</h4>
+              <p>Кантроль якасці распрацаваных рашэнняў з дапамогай разнастайных паслуг тэсціравання праграмнага
+                забеспячэння</p>
+            </div>
+            <div class="services-card">
+              <img src="img/services/ico_6.png" alt="UX/UI дызайн">
+              <h4>UX/UI дызайн</h4>
+              <p>Распрацоўка дызайна вэб-платформы, сайта ці мабільнага датадка</p>
+            </div>
+            <div class="services-card">
+              <img src="img/services/ico_7.png" alt="Выдзеленая каманда">
+              <h4>Выдзеленая каманда</h4>
+              <p>UX/UI // Back-end (Python, Golang, C/C++) // DevOps (AWS) // Front-end (JavaScript, React, Redux, HTML,
+                CSS) // iOS/Android //QA тэстыроўшчык</p>
+            </div>
+            <div class="services-card">
+              <img src="img/services/ico_8.png" alt="Кансультацыя па распрацоўцы">
+              <h4>Кансультацыя па распрацоўцы</h4>
+              <p>IT прадукта // Мабільнага дадатка // Telegram-бота // AI-сістэм // Нейроннай сеткі</p>
+            </div>
+          </div>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Абмеркаваць праект</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Праекты</h2>
+          <div class="projects-inner">
+            <div class="projects-slider">
+              <div class="projects-slider-item">
+                <div class="slider-info">
+                  <div class="slider-banner">
+                    <img src="img/projects/project_1.png" alt="Праект">
+                  </div>
+                  <div class="slider-content">
+                    <h5>БелСінт. Галасавы AI асістэнт</h5>
+                    <p>Галасавы АІ-асістэнт – платформа з пытальна-адказнымі сістэмамі, з якімі можна пагаварыць голасам
+                      і тэкстам. Мэта распрацоўкі – забяспечыць эфектыўны і просты ў выкарыстанні механізм прадстаўлення
+                      агульнай інфармацыі і рашэння пытанняў карыстальнікаў. </p>
+                    <p>Пытальна-адказная сістэма дазваляе карыстальніку голасам задаць пытанне і атрымаць на яго гукавы
+                      адказ. За кошт выкарыстання штучнага інтэлекту яна дае магчымасць атрымліваць хуткія, якасныя
+                      і дакладныя адказы на розныя пытанні. У выніку штодзённага навучання галасавы асістэнт можа як
+                      адказаць вам на запыты пра навуку, так і зрабіць забаўныя прапановы.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-slider-item">
+                <div class="slider-info">
+                  <div class="slider-banner">
+                    <img src="img/projects/project_2.png" alt="Праект">
+                  </div>
+                  <div class="slider-content">
+                    <h5>Telrgram-канал BelAI</h5>
+                    <p>Telegram-канал прадстаўляе карысныя і цікавыя навіны, якія звязаныя са штучным інтэлектам у свеце
+                      і ў Беларусі.</p>
+                    <p>BELAI дапамагае прасоўваць штучны інтэлект, адлюстроўваючы яго значнасць і важнасць у сучасным
+                      свеце. Ён падкрэслівае ролю ШІ у інавацыях, навуковых даследаваннях, медыцыне, аўтаматызацыі
+                      працэсаў, кіраванні данымі і ў іншых галінах.</p>
+                    <p>Навіны аб поспехах і прарывах у штучным інтэлекце іншых краін могуць натхняць айчынных навукоўцаў
+                      і даследчыкаў і матываваць іх прыняць удзел у даследаваннях, распрацоўках і інавацыях. Канал
+                      дэманструе таксама патэнцыйныя кар’ерныя магчымасці ў гэтай галіне, прыцягваючы новых спецыялістаў
+                      і таленты.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-slider-item">
+                <div class="slider-info">
+                  <div class="slider-banner">
+                    <img src="img/projects/project_3.png" alt="Праект">
+                  </div>
+                  <div class="slider-content">
+                    <h5>Платформа Штучнага інтэлекту BelAI</h5>
+                    <p>Платформа Штучнага Інтэлекту — гэта вэб-прыкладанне для спецыялістаў у сферы штучнага інтэлекту і
+                      ўсіх, хто цікавіцца гэтай сферай.</p>
+                    <p>Мэта праекта — сабраць на адзіным партале пад эгідай НАН Беларусі айчынныя і замежныя кампаніі,
+                      каманды і індывідуальных распрацоўшчыкаў, і практыкаў у галіне штучнага інтэлекту, выбудаваць
+                      агульную палітыку іх работы ў гэтай прадметнай галіне.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-slider-item">
+                <div class="slider-info">
+                  <div class="slider-banner">
+                    <img src="img/projects/project_4.png" alt=Праект"">
+                  </div>
+                  <div class="slider-content">
+                    <h5>OstLab: пераўтварайце вашыя ідэі ў ІТ рашэнні з АІ інавацыяй</h5>
+                    <p>Сайт прадстаўляе шматфункцыянальную каманда менеджараў праектаў, АІ распрацоўшчыкаў, праграмістаў
+                      і каманду дызайнераў, здольных вырашаць самыя складаныя ІТ-задачы.</p>
+                    <p>Місія складаецца ў тым, каб дапамагчы асабам і прадпрыемствам выкарыстоўваць перадовыя тэхналогіі
+                      AI і Data Science для ператварэння іх ідэй у інавацыйныя ІТ-рашэнні.</p>
+                    <p>Бачанне складаецца у стварэнні будучыні, у якой інавацыі на аснове штучнага інтэлекту арганічна
+                      інтэграваныя ў штодзенне жыццё, забяспечваючы павышэнне эфектыўнасці, прадуктыўнасці і росту.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-slider-item">
+                <div class="slider-info">
+                  <div class="slider-banner">
+                    <img src="img/projects/project_5.png" alt="Праект">
+                  </div>
+                  <div class="slider-content">
+                    <h5>Аўдыягід па Лідскім замку</h5>
+                    <p>Лідскі замак быў пабудаваны ў тыя цяжкія часы, калі наступленне крыжакоў на беларускія і
+                      літоўскія землі дасягнула найбольшай сілы. Каб заступіць рыцарам шлях на землі Вялікага Княства
+                      Літоўскага, вялікі князь Гедымін у 1323 годзе загадаў пабудаваць у Лідзе каменны замак. </p>
+                    <p>Сёння ў замку праходзяць канцэрты, фестывалі і рыцарскія турніры. Турыстам прапануюцца
+                      анімацыйныя, інтэрактыўныя праграмы, музейна-педагагічныя заняткі, экскурсія “Замак Гедыміна -
+                      помнік архітэктуры XIV стагоддзя”.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="projects-slider-item">
+                <div class="slider-info">
+                  <div class="slider-banner">
+                    <img src="img/projects/project_6.png" alt="Праект">
+                  </div>
+                  <div class="slider-content">
+                    <h5>Аўдыягід па Цэнтральным батанічным садзе НАН Беларусі</h5>
+                    <p>Цэнтральны батанічны сад Нацыянальнай акадэміі навук Беларусі — адна са старэйшых батанічных
+                      устаноў Беларусі.</p>
+                    <p>Сёння ён з'яўляецца ўнікальным прыродным аб'ектам садова-паркавага мастацтва, які спалучае
+                      функцыі сталічнай славутасці і найважнейшага культурна-асветніцкага, эколага-выхаваўчага і
+                      адукацыйнага цэнтра.</p>
+                    <p>Сад належыць да ліку найбуйнейшых батанічных садоў Еўропы як па плошчы (93 га), так і па складзе
+                      калекцый раслін (больш за 15 тысяч найменняў).</p>
+                    <p>Здзейсніце займальную экскурсію па батанічным садзе разам з нашым аўдыягідам і даведайцеся пра
+                      квітнеючыя калекцыі, «Востраў мастацтваў», экалагічную сцежку, аранжарэі з трапічнымі і
+                      цытрусавымі раслінамі і многае іншае.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="order-inner">
+            <div class="order-banner">
+              <img src="img/order/fire-dynamic-gradient.png" alt="Заказ">
+            </div>
+            <div class="order-info">
+              <h2>Асаблівая прапанова</h2>
+              <p>Атрымаеце <span>комплекснае рашэнне</span> па UX/UI дызайне для вашых вэб-сайтаў, мабільных
+                прыкладанняў і Telegram ботаў!</p>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Абмеркаваць праект</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Наша каманда</h2>
+          <div class="team-inner">
+            <div class="team-slider">
+              <div class="team-slider-item">
+                <div class="team-slider-card">
+                  <img src="img/team/team_1.png" alt="Каманда">
+                  <span>CEO</span>
+                  <p>Юрась Гецевіч</p>
+                  <p>Загадчык лабараторыі</p>
+                </div>
+              </div>
+              <div class="team-slider-item">
+                <div class="team-slider-card">
+                  <img src="img/team/team_2.png" alt="Каманда">
+                  <span>BDM</span>
+                  <p>Давід Латышэвіч</p>
+                  <p>Малодшы навуковы супрацоўнік</p>
+                </div>
+              </div>
+              <div class="team-slider-item">
+                <div class="team-slider-card">
+                  <img src="img/team/team_3.png" alt="Каманда">
+                  <span>HR</span>
+                  <p>Маргарыта Казлова</p>
+                  <p>HR-менеджэр</p>
+                </div>
+              </div>
+              <div class="team-slider-item">
+                <div class="team-slider-card">
+                  <img src="img/team/team_4.png" alt="Каманда">
+                  <span>Design</span>
+                  <p>Юля Васілеўская</p>
+                  <p>UX/UI дызайнер</p>
+                </div>
+              </div>
+              <div class="team-slider-item">
+                <div class="team-slider-card">
+                  <img src="img/team/team_5.png" alt="Каманда">
+                  <span>Dev</span>
+                  <p>Глеб Кухарэвіч</p>
+                  <p>Python developer</p>
+                </div>
+              </div>
+              <div class="team-slider-item">
+                <div class="team-slider-card">
+                  <img src="img/team/team_6.png" alt="Каманда">
+                  <span>PM</span>
+                  <p>Марыя Слесарава</p>
+                  <p>Мэнеджэр праектаў</p>
+                </div>
+              </div>
+              <div class="team-slider-item">
+                <div class="team-slider-card">
+                  <img src="img/team/team_7.png" alt="Каманда">
+                  <span>Dev</span>
+                  <p>Давід Танюкевіч</p>
+                  <p>iOS developer</p>
+                </div>
+              </div>
+              <div class="team-slider-item">
+                <div class="team-slider-card">
+                  <img src="img/team/team_8.png" alt="Каманда">
+                  <span>PM</span>
+                  <p>Вольга Дыдо</p>
+                  <p>Мэнеджэп праектаў</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="idea">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="idea-inner">
+            <div class="idea-content">
+              <h2>Есць ідэя для абмеркавання?</h2>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Звязацца</button>
+            </div>
+            <div class="idea-banner">
+              <img src="img/idea.png" alt="Заказ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-inner">
+            <div class="footer-info">
+              <div class="footer-logo">
+                <img src="img/logo-footer.png" alt="Logo">
+                <p>Лабараторыя распазнавання і сінтэзу маўлення</p>
+              </div>
+              <p class="adres">г. Мінск, вул. Сурганава, 6, пакой АІПІ НАН Беларусі </p>
+              <p class="mail">E-mail: <a href="mailto:sales@ssrlab.by">sales@ssrlab.by</a></p>
+            </div>
+            <div class="mobile-row">
+              <div class="footer-nav">
+                <ul>
+                  <li><a id="expert">Экспертыза</a></li>
+                  <li><a id="uslugi">Паслугі</a></li>
+                  <li><a id="proecti">Пра нас</a></li>
+                  <li><a id="about">Праекты</a></li>
+                </ul>
+              </div>
+              <div class="footer-social">
+                <a href="https://www.facebook.com/ssrlab/" target="_blank">
+                  <img src="img/icon/Facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/united-institute-of-informatics-problems/" target="_blank">
+                  <img src="img/icon/linkedin.png" alt="Linkedin">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content order-modal">
+        <div class="modal-body">
+          <div class="modal-left">
+            <div class="modal-inner">
+              <h3>Пакіньце заяўку</h3>
+              <p>Раскажыце аб сваім праекце і задайце свае пытанні. Хутка мы звяжамся з Вамі!</p>
+              <div class="modal-social">
+                <a href="https://www.facebook.com/ssrlab/" target="_blank">
+                  <img src="img/icon/Facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/company/united-institute-of-informatics-problems/" target="_blank">
+                  <img src="img/icon/linkedin.png" alt="Linkedin">
+                </a>
+              </div>
+              <p class="modal-adres">г. Мінск, вул. Сурганава, 6, пакой АІПІ НАН Беларусі</p>
+              <p class="modal-mail">Email: <a href="mailto:sales@ssrlab.by">sales@ssrlab.by</a></p>
+              <p class="modal-site"><a href="https://ssrlab.by/" target="_blank">www.ssrlab.by</a></p>
+            </div>
+          </div>
+          <div class="modal-right">
+            <div class="modal-inner">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              <h3>Пакіньце заяўку</h3>
+              <p>Раскажыце аб сваім праекце і задайце свае пытанні.<br> Хутка мы звяжамся з Вамі!</p>
+                <form class="modal-form">
+                  <input type="text" placeholder="Імя*">
+                  <input type="tel" placeholder="Тэлефон*">
+                  <input type="email" placeholder="Email">
+                  <textarea placeholder="Апішыце ваш праэкт"></textarea>
+                  <button>Cтартаваць праект</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
