@@ -1,34 +1,38 @@
 $(function(){
     $('.projects-slider').slick({
-      prevArrow: '<button type="button" class="projects-prev"><img src="img/icon/left.png" alt="Стрэка"></button>',
-      nextArrow: '<button type="button" class="projects-next"><img src="img/icon/right.png" alt="Стрэлка"></button>'
+      prevArrow: '<button type="button" class="projects-prev"><img src="img/icon/left.svg" alt="Стрэка"></button>',
+      nextArrow: '<button type="button" class="projects-next"><img src="img/icon/right.svg" alt="Стрэлка"></button>'
     });
 
     $('.team-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="projects-prev"><img src="img/icon/left.png" alt="Стрэка"></button>',
-        nextArrow: '<button type="button" class="projects-next"><img src="img/icon/right.png" alt="Стрэлка"></button>',
+        infinite: true,
+        prevArrow: '<button type="button" class="projects-prev"><img src="img/icon/left.svg" alt="Стрэка"></button>',
+        nextArrow: '<button type="button" class="projects-next"><img src="img/icon/right.svg" alt="Стрэлка"></button>',
         responsive: [
           {
             breakpoint: 1024,
             settings: {
+              centerMode: true,
+              centerPadding: '20px',
               slidesToShow: 2,
-              slidesToScroll: 1,
             }
           },
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
+              centerMode: true,
+              centerPadding: '5px',
+              slidesToShow: 1,
             }
           },
           {
             breakpoint: 480,
             settings: {
+              centerMode: true,
+              centerPadding: '8px',
               slidesToShow: 1,
-              slidesToScroll: 1
             }
           }
           // You can unslick at a given breakpoint now by adding:
@@ -48,21 +52,20 @@ $(function(){
             breakpoint: 1024,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 3,
             }
           },
           {
             breakpoint: 600,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2
             }
           },
           {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              centerMode: true,
+              centerPadding: '20px',
             }
           },
           {

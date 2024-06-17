@@ -69,7 +69,7 @@ button {
 
 button:hover {
     transition: all .5s;
-    background-color: #B7BCD8;
+    background-color: #EBA575;
 }
 
 button:focus {
@@ -313,6 +313,17 @@ button:focus {
     transition: all .5s;
 }
 
+    .services-card:hover {
+        transition: all .5s;
+        background-color: #F7F7FF;
+    }
+    
+    .services-card:hover h4,
+    .services-card:hover p {
+        color: #1C1C25;
+        transition: all .5s;
+    }
+
 .services-card:hover {
     transition: all .5s;
     background-color: #1C1C25;
@@ -462,6 +473,16 @@ button:focus {
     margin-bottom: 40px;
 }
 
+.team-slider-item{
+    min-width: 295px;
+    max-width: 295px !important;
+    margin-left: 15px;
+}
+
+.team-slider-item:last-child{
+    margin-right: 0;
+}
+
 .team-slider-item:nth-child(2n) {
     margin-top: 40px;
 }
@@ -507,7 +528,10 @@ button:focus {
     background: linear-gradient(90deg, rgba(120, 164, 201, 1) 0%, rgba(183, 188, 216, 1) 100%);
     padding-top: 100px;
     padding-bottom: 250px;
+    position: relative;
+    overflow: hidden;
 }
+
 
 .idea-inner {
     display: flex;
@@ -536,12 +560,65 @@ button:focus {
 
 .footer-inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.footer-logo img{
+    margin-right: 6.75px;
+}
+
+.footer-logo p{
+    max-width: 262px;
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.adres, .mail{
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+.adres{
+    max-width: 362px;
+    margin-bottom: 15px;
+}
+
+.mail a{
+    color: #fff;
+}
+
+.footer-menu li{
+    margin-bottom: 16px;
+}
+
+.footer-menu li:last-child{
+    margin-bottom: 0;
+}
+
+.footer-menu li a{
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+.footer-nav{
+    display: none;
 }
 
 .footer-nav a {
     color: #fff;
+}
+
+.footer-social a:first-child{
+    margin-right: 20px;
 }
 
 /* Модальное окно */
@@ -705,7 +782,53 @@ button:focus {
     border-bottom: 1px solid #1C1C25;
 }
 
-@media (max-width: 991.98px) {}
+
+@media (min-width: 1400px){
+    .idea::after{
+        content: '';
+        position: absolute;
+        background-color: #1C1C25;
+        min-height: 420px;
+        width: 105%;
+        border-radius: 50%;
+        right: -2%;
+        top: 76%;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .idea::after{
+        content: '';
+        position: absolute;
+        background-color: #1C1C25;
+        min-height: 420px;
+        width: 105%;
+        border-radius: 50%;
+        right: -2%;
+        top: 76%;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .idea::after{
+        content: '';
+        position: absolute;
+        background-color: #1C1C25;
+        min-height: 420px;
+        width: 105%;
+        border-radius: 50%;
+        right: -2%;
+        top: 76%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .team-slider-item{
+        min-width: 295px;
+        max-width: 295px !important;
+        margin-left: 20px;
+    }
+}
 
 @media (max-width: 767.98px) {
     .container {
@@ -805,6 +928,7 @@ button:focus {
         font-weight: 400;
         max-width: 328px;
         margin-bottom: 30px;
+        display: none;
     }
 
     .chekin {
@@ -904,6 +1028,17 @@ button:focus {
         padding: 30px 30px 48px 30px;
         min-height: 285px;
         margin-bottom: 30px;
+    }
+
+    .services-card:hover {
+        transition: all .5s;
+        background-color: #F7F7FF;
+    }
+    
+    .services-card:hover h4,
+    .services-card:hover p {
+        color: #1C1C25;
+        transition: all .5s;
     }
 
     .services-card img{
@@ -1027,6 +1162,12 @@ button:focus {
         margin-bottom: 40px;
     }
 
+    .team-slider-item{
+        min-width: 295px;
+        max-width: 295px !important;
+        margin-left: 56px;
+    }
+
     .team-slider-card img{
         max-width: 100%;
         width: 100%;
@@ -1048,6 +1189,17 @@ button:focus {
     .idea{
         padding-top: 80px;
         padding-bottom: 20px;
+    }
+
+    .idea::after{
+        content: '';
+        position: absolute;
+        background-color: #1C1C25;
+        min-height: 420px;
+        width: 105%;
+        border-radius: 50%;
+        right: -2%;
+        top: 76%;
     }
 
     .idea-inner{
@@ -1129,6 +1281,14 @@ button:focus {
         display: flex;
         flex-direction: column-reverse;
     }
+    
+    .footer-menu{
+        display: none;
+    }
+
+    .footer-nav{
+        display: block;
+    }
 
     .footer-nav ul{
         text-align: center;
@@ -1151,7 +1311,7 @@ button:focus {
     .footer-social{
         margin-bottom: 20px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .offcanvas{
@@ -1233,6 +1393,7 @@ button:focus {
         left: -27%;
     }
 }
+
 
 @media (max-width: 575.98px) {
 
@@ -1328,6 +1489,7 @@ button:focus {
         font-weight: 400;
         max-width: 328px;
         margin-bottom: 30px;
+        display: none;
     }
 
     .chekin {
@@ -1427,6 +1589,22 @@ button:focus {
         padding: 30px 30px 48px 30px;
         min-height: 285px;
         margin-bottom: 30px;
+        margin-right: 8px;
+    }
+
+    .services-card:last-child{
+        margin-right: 0;
+    }
+
+    .services-card:hover {
+        transition: all .5s;
+        background-color: #F7F7FF;
+    }
+    
+    .services-card:hover h4,
+    .services-card:hover p {
+        color: #1C1C25;
+        transition: all .5s;
     }
 
     .services-card img{
@@ -1550,6 +1728,16 @@ button:focus {
         margin-bottom: 40px;
     }
 
+    .team-slider-item{
+        min-width: 295px;
+        max-width: 295px !important;
+        margin-left: 19px;
+    }
+
+    .team-slider-item:last-child{
+        margin-right: 0;
+    }
+
     .team-slider-card img{
         max-width: 100%;
         width: 100%;
@@ -1571,6 +1759,10 @@ button:focus {
     .idea{
         padding-top: 80px;
         padding-bottom: 20px;
+    }
+
+    .idea::after{
+        display: none;
     }
 
     .idea-inner{
@@ -1652,6 +1844,14 @@ button:focus {
         display: flex;
         flex-direction: column-reverse;
     }
+    
+    .footer-menu{
+        display: none;
+    }
+
+    .footer-nav{
+        display: block;
+    }
 
     .footer-nav ul{
         text-align: center;
@@ -1674,7 +1874,7 @@ button:focus {
     .footer-social{
         margin-bottom: 20px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .offcanvas{
@@ -1803,3 +2003,12 @@ button:focus {
 
 
 }
+
+
+
+
+
+
+
+
+
